@@ -22,3 +22,7 @@ $primary-font: $lato;
 
 // breakpoints
 $min-laptop: 768px;
+
+$breakpoints: (
+    'md' : (min-width: $min-laptop),
+) !default;

@@ -1,0 +1,28 @@
+.content {
+
+    &__head {
+        text-align: left;
+        font-size: $font-size-xx-large;
+        padding: 2rem 0;
+    }
+
+    &__card {
+        padding: 1rem 1rem;
+
+        &--image {
+            width: 100%;
+        }
+
+        &--title {
+            text-align: left;
+            font-weight: bold;
+            font-size: $font-size-large;
+            padding: 0.7rem 0 0.5rem 0;
+        }
+
+        &--paragraph {
+            font-size: $font-size-small;
+        }
+
+    }    
+}

@@ -1,0 +1,14 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'vendor/scss/bootstrap.scss';
+
+@import 'base/reset';
+
+@import 'components/buttons';
+@import 'components/navigation';
+
+@import 'layout/banner';
+@import 'layout/content';
+
+@import 'pages/home';

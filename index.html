@@ -1,18 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/c95a83b4a8.js" crossorigin="anonymous"></script>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <!--Bootraps Css-->
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Desafio GIGEO</title>
 </head>
+
 <body>
-    <nav></nav>
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">GIGEO<span>ART</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="#"><i class="fas fa-search"></i><span
+                            class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#"><i class="fas fa-video"></i></a>
+                    <a class="nav-link" href="#"><i class="fas fa-plus"></i></a>
+                    <a class="nav-link" href="#"><i class="far fa-bell"></i></a>
+                    <a class="nav-link" href="#"><i class="fas fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Banner-->
     <header>
-        baner
+        <div class="banner"></div>
+        <section class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="assets/images/profile-image.png" alt="">
+                </div>
+                <div class="col-md-3">
+                    <h1>Yuki Mukami</h1>
+                    <div>30.000 seguidores</div>
+                </div>
+                <div class="col-md-6">
+                    <a class="button" href="">Mensaje</a>
+                    <a class="button" href="">Seguir</a>
+                </div>
+            </div>
+        </section>
     </header>
-    <main>
-        
+
+    <!--Contenido-->
+    <main class="content container">
+        <h2 class="content__head">Vídeos populares</h2>
+        <section class="row">
+            <!--Tarjeta 1-->
+            <article class="content__card col-md-3">
+                <img class="content__card--image" src="assets/images/image-1.png" alt="...">
+                <div class="">
+                    <h5 class="content__card--title">Después de la vela - Yuki Mukami</h5>
+                    <p class="content__card--paragraph">16k visitas - 1 semana atrás</p>
+                </div>
+            </article>
+
+            <!--Tarjeta 2-->
+            <article class="content__card col-md-3">
+                <img class="content__card--image" src="assets/images/image-2.png" alt="...">
+                <div class="">
+                    <h5 class="content__card--title">Far Away - Yuki Mukami</h5>
+                    <p class="content__card--paragraph">100k visitas - 1 mes atrás</p>
+                </div>
+            </article>
+
+            <!--Tarjeta 3-->
+            <article class="content__card col-md-3">
+                <img class="content__card--image" src="assets/images/image-3.png" alt="...">
+                <div class="">
+                    <h5 class="content__card--title">City - Yuki Mukami</h5>
+                    <p class="content__card--paragraph">20k visitas - 1 mes atrás</p>
+                </div>
+            </article>
+
+            <!--Tarjeta 4-->
+            <article class="content__card col-md-3">
+                <img class="content__card--image" src="assets/images/image-4.png" alt="...">
+                <div class="">
+                    <h5 class="content__card--title">A Yuki Tale - Yuki Mukami</h5>
+                    <p class="content__card--paragraph">1m visitas - 1 año atrás</p>
+                </div>
+            </article>
+
+            <!--Tarjeta 5-->
+            <article class="content__card col-md-3">
+                <img class="content__card--image" src="assets/images/image-5.png" alt="...">
+                <div class="">
+                    <h5 class="content__card--title">Mapocho - Yuki Mukami</h5>
+                    <p class="content__card--paragraph">100k visitas - 1 mes atrás</p>
+                </div>
+            </article>
+
+            <!--Tarjeta 6-->
+            <article class="content__card col-md-3">
+                <img class="content__card--image" src="assets/images/image-6.png" alt="...">
+                <div class="">
+                    <h5 class="content__card--title">Luky Days - Yuki Mukami</h5>
+                    <p class="content__card--paragraph">40k visitas - 3 meses atrás</p>
+                </div>
+            </article>
+
+            <!--Tarjeta 7-->
+            <article class="content__card col-md-3">
+                <img class="content__card--image" src="assets/images/image-7.png" alt="...">
+                <div class="">
+                    <h5 class="content__card--title">30 days in My House</h5>
+                    <p class="content__card--paragraph">10k visitas - 4 meses atrás</p>
+                </div>
+            </article>
+
+            <!--Tarjeta 8-->
+            <article class="content__card col-md-3">
+                <img class="content__card--image" src="assets/images/image-8.png" alt="...">
+                <div class="">
+                    <h5 class="content__card--title">Santiago - Yuki Mukami</h5>
+                    <p class="content__card--paragraph">40k visitas - 3 meses atrás</p>
+                </div>
+            </article>
+        </section>
+
+
     </main>
-    
+
 </body>
+
 </html>
