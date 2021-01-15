@@ -1,14 +1,20 @@
 // colors setup
 $swamp: #001614;
-$gray: #888;
+$gray: rgb(218, 218, 218);
 $silver: #CCC;
 $white: #FFF;
 $sky-blue: #79DEE7;
 $persimmon: #FF565B;
 
 // fonts setup
-$lato: 'Lato', sans-serif;
-$lato-weight-regular: 400;
+$roboto: 'Roboto', sans-serif;
+$spartan: 'Spartan', sans-serif;
+$roboto-weight-regular: 400;
+$roboto-weight-medium: 600;
+$roboto-weight-bold: 700;
+$spartan-weight-regular: 400;
+$spartan-weight-medium: 600;
+$spartan-weight-bold: 700;
 
 $font-size-xxx-large: 40px;
 $font-size-xx-large: 30px;
@@ -17,8 +23,10 @@ $font-size-large: 18px;
 $font-size-medium: 16px;
 $font-size-small: 14px;
 $font-size-x-small: 12px;
+$font-size-xx-small: 10px;
 
-$primary-font: $lato;
+$primary-font: $roboto;
+$secundary-font: $spartan;
 
 // breakpoints
 $min-laptop: 768px;

@@ -1,0 +1,23 @@
+.navbar {
+    padding: 1rem;
+
+    &__icono {
+        font-family: $secundary-font;
+        font-size: $font-size-xxx-large;
+        font-weight: $spartan-weight-medium;
+
+
+        &--up {
+            font-size: $font-size-xx-small;
+            top: -2rem;
+        }
+    }
+
+    &__list {
+
+        &--item {
+            font-size: $font-size-x-large;
+            padding: .7rem 0;
+        }
+    }
+}

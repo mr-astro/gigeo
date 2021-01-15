@@ -1,0 +1,25 @@
+.banner {
+
+    &__box {
+
+        &--contenedor {
+            padding: 3rem 0;
+         }
+        
+        &--button:first-child {
+            padding: 1rem 2rem;
+            font-size: $font-size-x-large;
+            background-color: $sky-blue;
+            color: $white;
+            margin: 0 1rem 0 0;
+            
+        }
+
+        &--button:last-child {
+            padding: 1rem 3rem;
+            font-size: $font-size-x-large;
+            background-color: $persimmon;
+            color: $white;
+        }
+    }
+}

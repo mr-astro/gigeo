@@ -1,0 +1,40 @@
+.banner {
+    background-image: url('../images/image-banner.png');
+    background-repeat: no-repeat;
+    background-position: center; //centra la imagen del banner
+    background-size: cover;
+    padding: 10% 0;
+
+    &__box {
+        margin: 2rem 0;
+
+        &--contenedor {
+           padding: 3rem 0;
+        }
+
+        &--image {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        &--title {
+            font-weight: $roboto-weight-bold;
+            font-size: $font-size-xx-large;
+        }
+
+        &--paragraph {
+            margin: 1rem 0 0 0;
+            font-size: $font-size-x-large;
+            color: $silver;
+        }
+    }
+
+}
+
+.linea{
+    margin:0px auto;
+    height: 0.18rem;
+    width: 100%;
+    background-color: $gray;
+}
