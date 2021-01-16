@@ -9943,19 +9943,16 @@ input {
   border-radius: 0;
 }
 
-.banner__box--contenedor {
-  padding: 3rem 0;
-}
 .banner__box--button:first-child {
   padding: 1rem 2rem;
-  font-size: 20px;
+  font-size: 1.25rem;
   background-color: #79DEE7;
   color: #FFF;
   margin: 0 1rem 0 0;
 }
 .banner__box--button:last-child {
   padding: 1rem 3rem;
-  font-size: 20px;
+  font-size: 1.25rem;
   background-color: #FF565B;
   color: #FFF;
 }
@@ -9965,15 +9962,15 @@ input {
 }
 .navbar__icono {
   font-family: "Spartan", sans-serif;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 .navbar__icono--up {
-  font-size: 10px;
+  font-size: 0.625rem;
   top: -2rem;
 }
 .navbar__list--item {
-  font-size: 20px;
+  font-size: 1.25rem;
   padding: 0.7rem 0;
 }
 
@@ -9987,22 +9984,48 @@ input {
 .banner__box {
   margin: 2rem 0;
 }
-.banner__box--contenedor {
+.banner__box--contenedor:first-child {
   padding: 3rem 0;
 }
+.banner__box--contenedor:last-child {
+  padding: 3rem 0;
+}
+@media only screen and (max-width: 767px) {
+  .banner__box--contenedor:last-child {
+    display: none;
+  }
+}
 .banner__box--image {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+@media only screen and (max-width: 767px) {
+  .banner__box--image {
+    width: 50%;
+  }
 }
 .banner__box--title {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 1.875rem;
+  margin: 2rem 0 0 0;
+}
+@media only screen and (max-width: 767px) {
+  .banner__box--title {
+    text-align: center;
+  }
 }
 .banner__box--paragraph {
   margin: 1rem 0 0 0;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #CCC;
+}
+@media only screen and (max-width: 767px) {
+  .banner__box--paragraph {
+    text-align: center;
+  }
 }
 
 .linea {
@@ -10014,7 +10037,7 @@ input {
 
 .content__head {
   text-align: left;
-  font-size: 30px;
+  font-size: 1.875rem;
   padding: 2rem 0;
 }
 .content__card {
@@ -10026,11 +10049,11 @@ input {
 .content__card--title {
   text-align: left;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem;
   padding: 0.7rem 0 0.5rem 0;
 }
 .content__card--paragraph {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 body {
