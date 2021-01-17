@@ -9943,15 +9943,13 @@ input {
   border-radius: 0;
 }
 
-.banner__box--button:first-child {
-  padding: 1rem 2rem;
+.banner__box__contenedor--button:first-child {
   font-size: 1.25rem;
   background-color: #79DEE7;
   color: #FFF;
   margin: 0 1rem 0 0;
 }
-.banner__box--button:last-child {
-  padding: 1rem 3rem;
+.banner__box__contenedor--button:last-child {
   font-size: 1.25rem;
   background-color: #FF565B;
   color: #FFF;
@@ -9977,54 +9975,57 @@ input {
 .banner {
   background-image: url("../images/image-banner.png");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  background-position: center;
   padding: 10% 0;
 }
 .banner__box {
   margin: 2rem 0;
 }
-.banner__box--contenedor:first-child {
-  padding: 3rem 0;
+.banner__box__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.banner__box--contenedor:last-child {
-  padding: 3rem 0;
-}
-@media only screen and (max-width: 767px) {
-  .banner__box--contenedor:last-child {
-    display: none;
-  }
-}
-.banner__box--image {
+.banner__box__image--foto {
   width: auto;
   height: auto;
   border-radius: 50%;
-  display: block;
-  margin: auto;
 }
-@media only screen and (max-width: 767px) {
-  .banner__box--image {
+@media only screen and (max-width: 991px) {
+  .banner__box__image--foto {
     width: 50%;
   }
 }
-.banner__box--title {
-  font-weight: 700;
-  font-size: 1.875rem;
-  margin: 2rem 0 0 0;
+.banner__box__texto {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: flex-start;
 }
-@media only screen and (max-width: 767px) {
-  .banner__box--title {
-    text-align: center;
+@media only screen and (max-width: 991px) {
+  .banner__box__texto {
+    margin: 1rem 0 0 0;
+    align-content: center;
   }
 }
-.banner__box--paragraph {
+.banner__box__texto--title {
+  font-weight: 700;
+  font-size: 1.875rem;
+}
+.banner__box__texto--paragraph {
   margin: 1rem 0 0 0;
   font-size: 1.25rem;
   color: #CCC;
 }
-@media only screen and (max-width: 767px) {
-  .banner__box--paragraph {
-    text-align: center;
+.banner__box__contenedor {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .banner__box__contenedor {
+    display: none;
   }
 }
 

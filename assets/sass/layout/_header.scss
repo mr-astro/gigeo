@@ -1,59 +1,62 @@
 .banner {
     background-image: url('../images/image-banner.png');
     background-repeat: no-repeat;
-    background-position: center; //centra la imagen del banner
     background-size: cover;
+    background-position: center; //centra la imagen del banner
     padding: 10% 0;
 
     &__box {
         margin: 2rem 0;
 
-        &--contenedor:first-child {
-            padding: 3rem 0;
+        &__image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &--foto {
+                width: auto;
+                height: auto;
+                border-radius: 50%;
+    
+                @include tablet-view {
+                    width: 50%;  
+                }
+            }
         }
 
-        &--contenedor:last-child {
-            padding: 3rem 0;
+        &__texto {
+            display: flex;
+            flex-flow: column wrap;  // deja alineado el texto en columnas
+            justify-content: center;
+            align-content: flex-start;
+            
+            @include tablet-view {
+                margin: 1rem 0 0 0;
+                align-content: center;
+            }
+            
+            &--title {
+                font-weight: $roboto-weight-bold;
+                font-size: $font-size-xx-large;
+            }
+
+            &--paragraph {
+                margin: 1rem 0 0 0;
+                font-size: $font-size-x-large;
+                color: $silver;
+            }
+        }
+
+        &__contenedor {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
 
             @include tablet-view {
                 display: none;
             }
         }
-
-        &--image {
-            width: auto;
-            height: auto;
-            border-radius: 50%;
-            display: block;
-            margin: auto;
-
-            @include tablet-view {
-                width: 50%;
-
-            }
-        }
-
-        &--title {
-            font-weight: $roboto-weight-bold;
-            font-size: $font-size-xx-large;
-            margin: 2rem 0 0 0;
-
-            @include tablet-view {
-                text-align: center;
-            }
-        }
-
-        &--paragraph {
-            margin: 1rem 0 0 0;
-            font-size: $font-size-x-large;
-            color: $silver;
-
-            @include tablet-view {
-                text-align: center;
-            }
-        }
     }
-
 }
 
 .linea{
