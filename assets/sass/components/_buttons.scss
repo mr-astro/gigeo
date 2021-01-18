@@ -9,12 +9,22 @@
                 background-color: $sky-blue;
                 color: $white;
                 margin: 0 1rem 0 0;
+
+                &:hover {
+                    background-color: $silver;
+                    color: $swamp;
+                }
             }
     
             &--button:last-child {
                 font-size: $font-size-x-large;
                 background-color: $persimmon;
                 color: $white;
+
+                &:hover {
+                    background-color: $silver;
+                    color: $swamp;
+                }
             }
         }
         

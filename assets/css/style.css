@@ -9949,10 +9949,18 @@ input {
   color: #FFF;
   margin: 0 1rem 0 0;
 }
+.banner__box__contenedor--button:first-child:hover {
+  background-color: #CCC;
+  color: #001614;
+}
 .banner__box__contenedor--button:last-child {
   font-size: 1.25rem;
   background-color: #FF565B;
   color: #FFF;
+}
+.banner__box__contenedor--button:last-child:hover {
+  background-color: #CCC;
+  color: #001614;
 }
 
 .navbar {
@@ -9980,7 +9988,7 @@ input {
   padding: 10% 0;
 }
 .banner__box {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 .banner__box__image {
   display: flex;
@@ -9989,7 +9997,7 @@ input {
 }
 .banner__box__image--avatar {
   width: 100%;
-  height: 110%;
+  height: 100%;
   border-radius: 50%;
 }
 @media only screen and (max-width: 991px) {
@@ -10036,7 +10044,7 @@ input {
 
 .linea {
   margin: 0px auto;
-  height: 0.18rem;
+  height: 0.07rem;
   width: 100%;
   background-color: #dadada;
 }
@@ -10050,7 +10058,8 @@ input {
   padding: 1rem 1rem;
 }
 .content__card--image {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 .content__card--title {
   text-align: left;
