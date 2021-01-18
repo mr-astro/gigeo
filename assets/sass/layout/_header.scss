@@ -13,13 +13,13 @@
             align-items: center;
             justify-content: center;
 
-            &--foto {
-                width: auto;
-                height: auto;
+            &--avatar {
+                width: 100%;
+                height: 110%;
                 border-radius: 50%;
     
                 @include tablet-view {
-                    width: 50%;  
+                    width: 50%;
                 }
             }
         }
@@ -38,6 +38,10 @@
             &--title {
                 font-weight: $roboto-weight-bold;
                 font-size: $font-size-xx-large;
+
+                @include tablet-view {
+                    margin: 1rem 0 0 0;
+                }
             }
 
             &--paragraph {
